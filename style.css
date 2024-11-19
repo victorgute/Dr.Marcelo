@@ -7,13 +7,12 @@
 }
 
 body {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #faf3e0; /* Marrom claro */
+    color: #4a2e2a; /* Marrom escuro */
 }
-
 /* Header */
 .hero-section {
-    background-color: #d3a57f;
+    background-color: #d9b6a3; /* Marrom claro */
     padding: 4rem 2rem;
     display: flex;
     align-items: center;
@@ -32,20 +31,18 @@ body {
 .hero-text {
     flex: 1;
     padding: 2rem;
-    background-color: rgba(211, 165, 127, 0.85);
+    background-color: rgba(217, 182, 163, 0.85); /* Marrom claro com transparência */
+    color: #4a2e2a; /* Marrom escuro para o texto */
     border-radius: 8px;
-    color: #333;
 }
 
 .hero-logo {
-    width: 120px;
-    margin-bottom: 1rem;
+    width: 500px;
 }
 
 .hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333;
 }
 
 .hero-text p {
@@ -53,10 +50,14 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.hero-text h1, .hero-text p {
+    color: #4a2e2a;
+}
+
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #8b5e3c;
+    background-color: #7b4b3a; /* Marrom médio */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -65,7 +66,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #704c2f;
+    background-color: #603824; /* Marrom escuro */
 }
 
 .hero-image {
@@ -85,7 +86,7 @@ body {
 
 /* Seção de Conteúdo */
 .content-section {
-    background-color: #f5f5f5;
+    background-color: #f1e0d6; /* Marrom claro */
     padding: 4rem 2rem;
     display: flex;
     justify-content: center;
@@ -102,8 +103,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-
-/* Texto à Esquerda */
 .content-text {
     flex: 1;
     padding: 2rem;
@@ -113,7 +112,7 @@ body {
 
 .content-text h2 {
     font-size: 2.5rem;
-    color: #d3a57f;
+    color: #7b4b3a; /* Marrom médio */
     margin-bottom: 1rem;
     position: relative;
     font-weight: bold;
@@ -126,7 +125,7 @@ body {
     left: 0;
     width: 50px;
     height: 4px;
-    background-color: #d4af37;
+    background-color: #d9b6a3; /* Marrom destaque */
     border-radius: 2px;
 }
 
@@ -136,11 +135,9 @@ body {
     line-height: 1.6;
 }
 
-/* Imagem com Destaque à Direita */
 .content-image {
     flex: 1;
-    background-color: #d3a57f;
-    padding: 1rem;
+    background-color: #d9b6a3; /* Marrom claro */
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -152,15 +149,12 @@ body {
 }
 
 .content-image img {
-    width: 100%;
-    max-width: 500px;
+    width: 300%;
+    max-width: 800px;
     transition: transform 0.3s ease;
     border-radius: 8px;
 }
 
-
-
-/* Animações */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -179,24 +173,20 @@ body {
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        color: #7b4b3a; /* Marrom médio */     transform: translateX(0);
     }
 }
 
-
-
 /* Seção de Cards */
-/* Título da Seção */
 .section-title {
     font-size: 2.5rem;
-    color: #d3a57f;
+    color: #7b4b3a; /* Marrom claro */
     margin-bottom: 2rem;
     text-align: center;
 }
 
-/* Seção de Cards */
 .cards-section {
-    background-color: #f5f5f5;
+    background-color: #f1e0d6; /* Marrom claro */
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -207,23 +197,22 @@ body {
 .cards-container {
     display: flex;
     gap: 2rem;
-    max-width: 1300px; /* Aumentado para dar mais visibilidade */
+    max-width: 1300px;
     width: 100%;
     justify-content: center;
     transition: transform 0.3s ease;
 }
 
-/* Estilos dos Cards */
 .card {
     flex: 1;
-    padding: 2.5rem; /* Aumentado para mais visibilidade */
+    padding: 2.5rem;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
-    max-width: 600px; /* Aumentado para mais espaço */
+    max-width: 600px;
 }
 
 .card:hover {
@@ -233,7 +222,7 @@ body {
 
 .card h3 {
     font-size: 2rem;
-    color: #d3a57f;
+    color: #7b4b3a; /* Marrom médio */
     margin-bottom: 1rem;
     position: relative;
 }
@@ -244,14 +233,13 @@ body {
 }
 
 .card ul li {
-    font-size: 1.2rem; /* Aumentado para dar destaque */
+    font-size: 1.2rem;
     margin-bottom: 0.75rem;
     color: #555;
     padding-left: 1.2rem;
     position: relative;
 }
 
-/* Marcadores de Lista */
 .card ul li::before {
     content: "\2022";
     color: #d3a57f;
@@ -260,9 +248,7 @@ body {
     left: 0;
 }
 
-/* Estilo do botão abaixo dos cards */
 .cards-button {
-    text-align: center;
     margin-top: 3rem;
 }
 
@@ -283,15 +269,13 @@ body {
     transform: scale(1.05);
 }
 
-
-
 /* Seção Por Que Escolher */
 .why-choose-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #f1e0d6; /* Marrom claro */
 }
 
 .why-choose-container {
@@ -303,14 +287,8 @@ body {
 }
 
 .why-choose-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.why-choose-image img {
     width: 100%;
-    max-width: 350px; /* Reduzindo o tamanho máximo da imagem */
+    max-width: 350px;
     border-radius: 8px;
 }
 
@@ -322,15 +300,17 @@ body {
 .why-choose-text h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
     margin-bottom: 15px;
 }
 
 .why-choose-text p {
     font-size: 16px;
-    color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.why-choose-text h2, .why-choose-text p {
+    color: #4a2e2a; /* Marrom escuro */
 }
 
 .why-choose-text ul {
@@ -404,9 +384,6 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 /* Seção de Depoimentos */
 .testimonial-section {
     background-color: #f5f5f5;
@@ -416,7 +393,7 @@ body {
 
 .testimonial-section h2 {
     font-size: 2rem;
-    color: #0c1f3f;
+    color: rgb(123, 75, 58);
     margin-bottom: 2rem;
 }
 
@@ -434,7 +411,6 @@ body {
     gap: 2rem;
 }
 
-/* Cartão de Depoimento */
 .testimonial-card {
     min-width: 300px;
     max-width: 400px;
@@ -456,21 +432,6 @@ body {
     font-size: 0.9rem;
     color: #8b5e3c;
 }
-
-
-
-.carousel-btn:hover {
-    opacity: 1;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
 
 /* Seção de Chamada para Ação e Formulário */
 .cta-section {
@@ -499,7 +460,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* Botão de WhatsApp */
 .cta-whatsapp-button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -559,20 +519,17 @@ body {
     background-color: #704c2f;
 }
 
-
-/* Estilos da Imagem na Chamada para Ação */
 .cta-image {
-    width: 450px; /* Ajuste o tamanho conforme necessário */
+    width: 450px;
     height: auto;
     border-radius: 10%;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Estilos para o Footer */
 .footer {
-    background-color: #0c1f3f;
+    background-color: #4a2e2a; /* Marrom escuro */
     color: #f9f9f9;
     padding: 2rem 1rem;
     text-align: center;
@@ -604,16 +561,21 @@ body {
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
-    color: #ffffff;
+
+.social-icons :hover{
+    color: #a8785d;
+}
+
+
+.social-icons a, .legal-links a {
+    color: #d9b6a3; /* Marrom claro */
 }
 
 .legal-links {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .legal-links a {
-    color: #d4af37;
     text-decoration: none;
     margin: 0 0.5rem;
 }
@@ -622,7 +584,6 @@ body {
     text-decoration: underline;
 }
 
-
 .about-section {
     padding: 60px 0;
     background-color: #704c2f;
@@ -630,16 +591,16 @@ body {
 
 .about-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o container na tela */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-image img {
     width: 100%;
-    max-width: 350px; /* Diminui o tamanho da imagem */
+    max-width: 350px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -648,12 +609,12 @@ body {
     flex: 1;
     color: #ffffff;
     text-align: left;
-    max-width: 600px; /* Limita a largura do texto */
+    max-width: 600px;
 }
 
 .about-content h2 {
     font-size: 2.5rem;
-    color: #d4af37;
+    color: #d3a57f;
     margin-bottom: 20px;
 }
 
@@ -669,12 +630,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px; /* Espaço entre o conteúdo e o botão */
+    margin-top: 30px;
 }
 
+
 .cta-button {
-    background-color: #d4af37;
-    color: #0c1f3f;
+    background-color: #d3a57f; /* Marrom médio */
+    color: black;
     padding: 12px 30px;
     font-size: 1rem;
     font-weight: bold;
@@ -686,7 +648,39 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #d4af37;
+    background-color: #c08e66;
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #d3a57f;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: #ecc2a0;
+    transform: scale(1.1);
+}
+
+#backToTop.show {
+    display: block;
+}
+
+.star{
+    color: #d3a57f;
 }
