@@ -811,6 +811,7 @@ body {
 
         .hero-logo{
             width: 100%;
+            margin-top: 1.5rem;
         }
 
     .hero-text p, .content-text p, .about-content p {
