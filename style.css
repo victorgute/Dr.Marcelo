@@ -10,6 +10,32 @@ body {
     background-color: #faf3e0; /* Marrom claro */
     color: #4a2e2a; /* Marrom escuro */
 }
+
+/* Estilos para o header */
+.topo{
+    background-color: #603824; /* Fundo preto */
+    padding: 10px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos dos ícones de contato */
+.contact-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-icons a {
+    color: rgb(217, 182, 163); /* Cor dos ícones */
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #926b4a; /* Cor de destaque ao passar o mouse */
+}
+
 /* Header */
 .hero-section {
     background-color: #d9b6a3; /* Marrom claro */
@@ -37,7 +63,7 @@ body {
 }
 
 .hero-logo {
-    width: 500px;
+    width: 300px;
 }
 
 .hero-text h1 {
@@ -46,8 +72,7 @@ body {
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .hero-text h1, .hero-text p {
@@ -56,7 +81,6 @@ body {
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem;
     background-color: #7b4b3a; /* Marrom médio */
     color: #fff;
     text-decoration: none;
@@ -130,7 +154,7 @@ body {
 }
 
 .content-text p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -203,6 +227,7 @@ body {
     transition: transform 0.3s ease;
 }
 
+
 .card {
     flex: 1;
     padding: 2.5rem;
@@ -213,6 +238,7 @@ body {
     position: relative;
     overflow: hidden;
     max-width: 600px;
+    text-align: left;
 }
 
 .card:hover {
@@ -225,19 +251,25 @@ body {
     color: #7b4b3a; /* Marrom médio */
     margin-bottom: 1rem;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .card ul {
     list-style-type: none;
     padding-left: 0;
+    margin: 0 auto; 
+    display: table;
 }
 
 .card ul li {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.75rem;
     color: #555;
     padding-left: 1.2rem;
     position: relative;
+    line-height: 1.5; 
+    text-align: left; 
 }
 
 .card ul li::before {
@@ -248,12 +280,13 @@ body {
     left: 0;
 }
 
+
 .cards-button {
     margin-top: 3rem;
 }
 
 .cards-button .cta-button {
-    padding: 1rem 2.5rem;
+    padding: 1.1rem 2.8rem;
     background-color: #8b5e3c;
     color: #fff;
     text-decoration: none;
@@ -405,6 +438,28 @@ body {
     margin: 0 auto;
 }
 
+
+
+/* Efeito hover para cartões de depoimento */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f1e0d6; /* Ajusta o fundo para destacar */
+}
+
+/* Opcional: estilo para o texto e estrelas no hover */
+.testimonial-card:hover p,
+.testimonial-card:hover cite,
+.testimonial-card:hover .star {
+    color: #7b4b3a; /* Cor marrom médio para maior contraste */
+}
+
+
+
 .carousel-wrapper {
     display: flex;
     transition: transform 0.5s ease;
@@ -416,7 +471,6 @@ body {
     max-width: 400px;
     padding: 2rem;
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     color: #333;
@@ -452,13 +506,27 @@ body {
     font-size: 2rem;
     color: #0c1f3f;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .cta-content p {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     color: #333;
     margin-bottom: 1.5rem;
+    text-align: left;
+    
 }
+
+
+
+
+
+
+
+
 
 .cta-whatsapp-button {
     display: inline-block;
@@ -619,7 +687,7 @@ body {
 }
 
 .about-content p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 50px;
     line-height: 1.8;
     text-align: justify;
@@ -631,6 +699,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+}
+
+.botao a{
+    padding: 1.1rem 2.8rem;
 }
 
 
@@ -706,7 +778,7 @@ body {
     }
 
     .hero-logo {
-        width: 80%;
+        width: 50%;
     }
 
     .hero-text h1 {
@@ -810,7 +882,7 @@ body {
         }
 
         .hero-logo{
-            width: 100%;
+            width: 70%;
             margin-top: 1.5rem;
         }
 
