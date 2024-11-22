@@ -143,16 +143,7 @@ body {
     font-weight: bold;
 }
 
-.content-text h2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    background-color: #d9b6a3; /* Marrom destaque */
-    border-radius: 2px;
-}
+
 
 .content-text p {
     font-size: 1.4rem;
@@ -896,8 +887,11 @@ body {
 
     .hero-text p, .content-text p, .about-content p {
         font-size: 1rem;
-        text-align: left;
+        text-align: left
+    }
 
+    .content-text p ::after{
+        display: none;
     }
 
     .section-title, .about-content h2, .content-text h2 {
