@@ -23,8 +23,8 @@ body {
 /* Estilos dos ícones de contato */
 .contact-icons {
     display: flex;
-    gap: 25px;
-    margin-left: 15px;
+    gap: 35px;
+    margin-left: 1rem;
 }
 
 .contact-icons a {
