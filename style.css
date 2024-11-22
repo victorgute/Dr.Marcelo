@@ -879,7 +879,8 @@ body {
 
     .hero-text {
         flex: 1;
-        padding-bottom: 0
+        padding-bottom: 0;
+        text-align: left;
     }
 
 
@@ -895,6 +896,8 @@ body {
 
     .hero-text p, .content-text p, .about-content p {
         font-size: 1rem;
+        text-align: left;
+
     }
 
     .section-title, .about-content h2, .content-text h2 {
