@@ -669,9 +669,10 @@ body {
 
 .about-image img {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(211, 165, 127);
 }
 
 .about-content {
