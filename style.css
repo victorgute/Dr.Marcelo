@@ -15,7 +15,7 @@ body {
 .topo{
     background-color: #603824; /* Fundo preto */
     padding: 10px 20px;
-    justify-content: flex-end;
+    justify-content: flex;
     align-items: center;
     display: flex;
 }
@@ -23,7 +23,8 @@ body {
 /* Estilos dos ícones de contato */
 .contact-icons {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    margin-left: 15px;
 }
 
 .contact-icons a {
@@ -447,7 +448,7 @@ body {
 
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     background-color: #f1e0d6; /* Ajusta o fundo para destacar */
 }
 
@@ -868,14 +869,19 @@ body {
         padding: 0;
     }
 
+
+    .contact-icons {
+        display: flex;
+        gap: 40px;
+        margin-left: 20%;
+    }
+
     .hero-text {
         flex: 1;
         padding-bottom: 0
     }
 
-    .hero-text p{
-        margin-bottom: 0;
-    }
+
 
         .hero-image{
             width: 60%;
@@ -887,11 +893,16 @@ body {
         }
 
     .hero-text p, .content-text p, .about-content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .section-title, .about-content h2, .content-text h2 {
         font-size: 1.5rem;
+    }
+
+    .testimonial-section h2{
+        font-size: 1.5rem;
+        white-space: nowrap;
     }
     
 
@@ -923,6 +934,15 @@ body {
 
         .cta-image{
             width: 100%;
+        }
+
+        .cta-content h2{
+            font-size: 1.2rem;
+            white-space:initial;
+        }
+
+        .cta-content p{
+            font-size: 1rem;
         }
 
         .legal-links{
