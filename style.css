@@ -27,13 +27,27 @@ body {
     margin-left: 1rem;
 }
 
+.contact-icons a{
+    display: flex;
+    text-decoration: none;
+}
+
 .contact-icons a {
     color: rgb(217, 182, 163); /* Cor dos ícones */
     font-size: 2rem;
     transition: color 0.3s ease;
 }
 
-.contact-icons a:hover {
+.contact-icons p{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.contact-icons i :hover {
+    color: #926b4a; /* Cor de destaque ao passar o mouse */
+}
+
+.contact-icons a :hover {
     color: #926b4a; /* Cor de destaque ao passar o mouse */
 }
 
@@ -472,7 +486,10 @@ body {
 }
 
 
-
+.telefone{
+    display: flex;
+    font-size: 1rem;
+}
 
 
 
@@ -574,14 +591,20 @@ body {
     margin: 0.5rem 0;
 }
 
+    .social-icons p{
+        margin-left: 1rem;
+    }
+
 .social-icons a {
+    display: flex;
     color: #d4af37;
     font-size: 1.5rem;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 
-.social-icons :hover{
+.social-icons a :hover{
     color: #a8785d;
 }
 
