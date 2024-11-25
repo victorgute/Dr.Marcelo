@@ -902,6 +902,7 @@ body {
         .cta-content h2{
             font-size: 1.2rem;
             white-space:initial;
+            text-align: left;
         }
 
         .cta-content p{
