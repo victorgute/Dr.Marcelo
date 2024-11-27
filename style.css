@@ -1031,7 +1031,7 @@ body {
     
         .cta-button {
             font-size: 0.7rem;
-            padding: 0.8rem 1rem;
+            padding: 1rem 1rem;
             margin-top: 1rem;
             margin-bottom: 0;
         }
@@ -1040,10 +1040,11 @@ body {
             font-size: 1.5rem;
             margin: 0;
         }
-    
-        .logo {
-            width: 90%; /* Ajusta o tamanho do logo */
-            margin: 0;
+
+        .header-text img{
+            max-width: 100%;
+            margin: 0.5rem 0rem;
         }
+
 
 }
