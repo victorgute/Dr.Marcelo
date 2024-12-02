@@ -747,33 +747,6 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.back-to-top {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    background-color: #d3a57f;
-    color: black;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    text-decoration: none;
-}
-
-.back-to-top:hover {
-    background-color: #ecc2a0;
-    transform: scale(1.1);
-}
-
-#backToTop.show {
-    display: block;
-}
 
 .star{
     color: #d3a57f;
@@ -791,6 +764,10 @@ body {
     }
     .header-text img{
         margin: 0rem 13rem;
+    }
+
+    .cta-content h2{
+        font-size: 1.5rem;
     }
 }
 
@@ -890,13 +867,6 @@ body {
         gap: 1rem;
     }
 
-    .back-to-top {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        line-height: 40px;
-    }
-
     .header-image img{
         width: 100%;
     }
@@ -955,6 +925,14 @@ body {
         line-height: 1.6;
     }
 
+    .content-text h2{
+        font-size: 1.2rem;
+    }
+
+    .content-text{
+        padding: 0;
+    }
+
     .testimonial-section h2{
         font-size: 1.5rem;
         white-space: nowrap;
@@ -974,6 +952,10 @@ body {
         max-width: 100%;
     }
 
+    .logo{
+        width: 80%;
+    }
+
 
     .about-image img{
         max-width: 70%;
@@ -991,6 +973,11 @@ body {
     .about-content p{
         font-size: 1rem;
         margin: 0px 1rem;
+        padding-right: 0.9rem;
+    }
+
+    .erro{
+        display: none;
     }
 
         .cta-image{
@@ -1004,10 +991,6 @@ body {
 
         .cta-content p{
             font-size: 1rem;
-        }
-
-        .cta-whatsapp-button{
-            margin-right: 2rem;
         }
 
         .legal-links{
@@ -1030,8 +1013,8 @@ body {
             margin: 0rem 2rem 0rem 0rem;
         }
     
-        .header-text h2 {
-            font-size: 1.1rem;
+        .header-text h1 {
+            font-size: 1.4rem;
         }
     
         .header-text p {
@@ -1058,5 +1041,9 @@ body {
             margin: 0.5rem 0rem;
         }
 
+        .testimonial-section h2{
+            text-wrap: initial;
+            font-size: 1.3rem;
+        }
 
 }
