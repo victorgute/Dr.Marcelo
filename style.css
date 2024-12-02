@@ -887,6 +887,10 @@ body {
         font-size: 20px;
         line-height: 40px;
     }
+
+    .header-image img{
+        width: 100%;
+    }
 }
 
 /* Responsividade para telas pequenas */
@@ -1014,8 +1018,8 @@ body {
         }
     
         .header-image img {
-            max-width: 350%; 
-            margin: 0rem 4rem 0rem 0rem;
+            width: 300%; 
+            margin: 0rem 2rem 0rem 0rem;
         }
     
         .header-text h2 {
