@@ -1005,7 +1005,7 @@ body {
         .header-text {
             text-align: left; /* Texto alinhado à esquerda */
             padding-left: 1rem;
-            width: 90%;
+            width: 100%;
         }
     
         .header-image img {
