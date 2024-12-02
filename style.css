@@ -51,7 +51,6 @@ body {
 }
 
 .icons :last-child :hover{
-    text-decoration: underline;
     transform: scale(1.1);
 }
 
@@ -141,13 +140,13 @@ body {
     flex-wrap: wrap;
 }
 
+
 .header-text {
     width: 70%; /* Lado esquerdo ocupa 70% */
     padding-right: 20px;
 }
 
-.header-text h2 {
-    font-size: 1.6rem;
+.header-text h1 {
     margin-bottom: 15px;
     color: #7b4b3a;
 }
@@ -178,6 +177,8 @@ body {
 }
 
 
+
+
 /* Seção de Conteúdo */
 .content-section {
     background-color: #f1e0d6; /* Marrom claro */
@@ -187,6 +188,7 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 
 .content-container {
     display: flex;
@@ -205,11 +207,12 @@ body {
 }
 
 .content-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color: #7b4b3a; /* Marrom médio */
     margin-bottom: 1rem;
     position: relative;
     font-weight: bold;
+    text-align: left;
 }
 
 
@@ -518,8 +521,7 @@ body {
     font-size: 1.6rem;
     color: #333;
     margin-bottom: 1.5rem;
-    text-align: left;
-    
+    text-align: center;
 }
 
 
@@ -530,6 +532,11 @@ body {
 
 
 
+.subtitulo {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
 
 
 
@@ -547,6 +554,8 @@ body {
 
 .cta-whatsapp-button:hover {
     background-color: #1ebc5c;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 /* Estilos do Formulário de Contato */
@@ -991,7 +1000,6 @@ body {
         .cta-content h2{
             font-size: 1.2rem;
             white-space:initial;
-            text-align: left;
         }
 
         .cta-content p{
